@@ -21,8 +21,8 @@ public class SortedMapCotxe {
 		map.put(new String("9216 CKK"), new Cotxe("Hyundai", "Accent", 2000, 4));
 		
 		// 3: Can you add duplicates?
-		map.put(new String("9216 CKK"), new Cotxe("Hyundai", "Accent", 2000, 4));
-		System.out.println("No podem afegir duplicats");	
+		Cotxe prova = map.put(new String("9216 CKK"), new Cotxe("Hyundai", "Accent", 2000, 4));
+		if (prova != null) System.out.println("No podem afegir duplicats");	
 		// Print them.
 		for (Map.Entry<String, Cotxe> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + " => " + entry.getValue());
